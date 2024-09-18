@@ -1,0 +1,123 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #344338;
+  background-image: url("resources/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background-image: url("resources/header.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #241010;
+  color: #00ff66;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  box-shadow: 0 4px 12 px rgba(233,6,6,0.2);
+  margin-bottom: 0px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* background-color: #ADD8E6; */
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  margin: 0 10px;
+}
+
+#player1-cards, #player2-cards {
+  display: flex;
+  gap: 3 em;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  height: auto;
+  width:auto;
+  /* background-color: #4CAF50; */
+
+  background-image: url("resources/bg\(Strong\).png");
+  background-repeat: no-repeat;
+  color: rgb(6,6,6);
+  font-size: 50px;
+  font-weight: 900;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease,box-shadow 0.15s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1)
+}
+
+.card:hover {
+  transform: scale(1.2);
+  background-color: #7aac1d;
+}
+
+.card-image {
+  width: 125px;
+  height: 150px;
+  object-fit: cover;
+  position: relative;
+  top: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#selected-player1-card, #selected-player2-card {
+  background-color: #0fe14e;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.749);
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card-image-selected {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#battle-result-container {
+  background-color: #cc6e37;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#fight-button, #fight-div, #return-button{
+  text-align:center;
+  padding:7px;
+}

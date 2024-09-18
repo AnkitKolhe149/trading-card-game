@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battle Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .winner-image {
+      width: 300px;
+      height: auto;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+    .result-message {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    #return-button{
+      text-align:center;
+      padding:7px;
+    }
+
+    #rslt{
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+    <div id='splash'>
+        <img alt='' class='logo' src="gifs/blue-lightning-dark.gif"/>
+        <!---src='https://blogger.googleusercontent.com/img/a/AVvXsEg0W7LVFOC9l0DpkhTfYY24SGKgESOElXeJ5s-k7lPYwLUUptIvzsHH6I4dwHAtfyVeKU0xUqALq9bg1yHhzZ_O37SiyeXhSW3JGJ3QEnxV4nlho-Io9mLgpbaVOVV_4gZDQXuqTU_6KYMD9tY9AcgMkeqbdMgx1uwcfjZfEJHXVq29Xyzqi3mw83ZgUg=s299'--->
+        </div>
+        <style>
+        #splash {
+            position:absolute;
+            top: 0;
+            left: 0;
+            background:#000000 !important;
+            height: 100vh;
+            width: 100%;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            transition: opacity 1.5s;
+        }
+        
+        #splash img {
+            width: 400px;
+        }
+        
+        #splash.fade {
+            opacity: 0;
+        }
+        </style>
+        <script>
+        setTimeout(() => {
+        document.getElementById('splash').classList.toggle('fade'); }, 2000);
+        //]]></script>
+  <h1>Battle Result</h1>
+  <div id="result-content"></div>
+  
+  <script>
+    // Get stored result and winner details from localStorage
+    const battleResult = localStorage.getItem('battleResult');
+    const winnerName = localStorage.getItem('winnerName');
+    const winnerImage = localStorage.getItem('winnerImage');
+    
+    const resultContent = document.getElementById('result-content');
+    
+    // Display result message and winner details (if any)
+    if (winnerName && winnerImage) {
+      resultContent.innerHTML = `
+        <p class="result-message">${battleResult}</p>
+        <img src="${winnerImage}" alt="${winnerName}" class="winner-image">
+        <h2>${winnerName} is the winner!</h2>
+      `;
+    } else {
+      resultContent.innerHTML = `<p class="result-message">${battleResult}</p>`;
+    }
+  </script>
+  <div id="rslt"><div><button id="return-button" onclick="window.location.href='./index.html';">RETURN</button></div></div>
+  <div><div><button  onclick="window.location.href ='../index.html';">RETURN</button></div></div>
+</body>
+</html>
