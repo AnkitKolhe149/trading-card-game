@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #344338;
-  background-image: url("resources/background.jpg");
+  background-image: url("./background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background-image: url("resources/header.png");
+  background-image: url("./header.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -59,7 +59,7 @@ main {
   width:auto;
   /* background-color: #4CAF50; */
 
-  background-image: url("resources/bg\(Strong\).png");
+  background-image: url("./bg\(Strong\).png");
   background-repeat: no-repeat;
   color: rgb(6,6,6);
   font-size: 50px;
