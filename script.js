@@ -1,18 +1,18 @@
 // Basic card data for player 1 and player 2, including image URLs
 const player1Cards = [
-    { name: 'Warrior', attack: 8, defense: 5, image: 'gifs/warrior.gif' },
-    { name: 'Mage', attack: 6, defense: 7, image: 'gifs/mage3-unscreen.gif' },
-    { name: 'Archer', attack: 7, defense: 6, image: 'gifs/archer3-unscreen.gif' },
-    { name: 'Dragon', attack: 10, defense: 8, image: 'gifs/dragon.gif' },
-    { name: 'Goblin', attack: 5, defense: 4, image: 'gifs/goblin.gif' },
+    { name: 'Warrior', attack: 8, defense: 5, image: 'warrior.gif' },
+    { name: 'Mage', attack: 6, defense: 7, image: 'mage3-unscreen.gif' },
+    { name: 'Archer', attack: 7, defense: 6, image: 'archer3-unscreen.gif' },
+    { name: 'Dragon', attack: 10, defense: 8, image: 'dragon.gif' },
+    { name: 'Goblin', attack: 5, defense: 4, image: 'goblin.gif' },
   ];
   
   const player2Cards = [
-    { name: 'Knight', attack: 7, defense: 7, image: 'gifs/knight.gif' },
-    { name: 'Sorcerer', attack: 6, defense: 8, image: 'gifs/sorcerer2-unscreen.gif' },
-    { name: 'Assassin', attack: 9, defense: 5, image: 'gifs/assasin2-unscreen.gif' },
-    { name: 'Zombie', attack: 10, defense: 9, image: 'gifs/zombie2.gif' },
-    { name: 'Orc', attack: 6, defense: 5, image: 'gifs/orc.gif' },
+    { name: 'Knight', attack: 7, defense: 7, image: 'knight.gif' },
+    { name: 'Sorcerer', attack: 6, defense: 8, image: 'sorcerer2-unscreen.gif' },
+    { name: 'Assassin', attack: 9, defense: 5, image: 'assasin2-unscreen.gif' },
+    { name: 'Zombie', attack: 10, defense: 9, image: 'zombie2.gif' },
+    { name: 'Orc', attack: 6, defense: 5, image: 'orc.gif' },
   ];
   
   // Variables to store selected cards for both players
