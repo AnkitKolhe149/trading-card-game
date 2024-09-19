@@ -13,37 +13,29 @@
 
   <main>
     <!-- Player 1 Section -->
-    <div id="player1-hand" class="card-container">
+    <section id="player1-section" class="player-section">
       <h2>Player 1's Hand</h2>
-      <div id="player1-cards"></div>
+      <div id="player1-cards" class="card-container"></div>
       <div id="selected-player1-card">
         <h2>Selected Card</h2>
         <div id="selected-player1-card-details"></div>
       </div>
-    </div>
+    </section>
 
     <!-- Player 2 Section -->
-    <div id="player2-hand" class="card-container">
+    <section id="player2-section" class="player-section">
       <h2>Player 2's Hand</h2>
-      <div id="player2-cards"></div>
+      <div id="player2-cards" class="card-container"></div>
       <div id="selected-player2-card">
-        <centre><h2>Selected Card</h2>
-        <div id="selected-player2-card-details"></div></centre>
-      
+        <h2>Selected Card</h2>
+        <div id="selected-player2-card-details"></div>
       </div>
-
-      <div id="fight-div"><div ><button id="fight-button" onclick="window.location.href='./final-result.html';">FIGHT</button></div></div>
-
-      </div>
-    
-    
-    <!-- Battle Result
-    <div id="battle-result-container">
-      <h2>Battle Result</h2>
-      <p id="battle-result">Select cards to start the battle!</p>
-    </div> -->
+    </section>
   </main>
 
+  <div class="action-container">
+    <button id="fight-button" class="fight-btn" onclick="startBattle()">FIGHT!</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
