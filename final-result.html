@@ -92,9 +92,17 @@
       `;
     } else {
       resultContent.innerHTML = `<p class="result-message">${battleResult}</p>`;
+
+    function redirectTo(url) {
+            window.location.href = url;
+        }
     }
   </script>
-  <div id="rslt"><div><button id="return-button" onclick="window.location.href='index.html';">RETURN</button></div></div>
-  <div><div><button  onclick="window.location.href ='index.html';">RETURN</button></div></div>
+  <div>
+  <div onclick="redirectTo('./index.html')">
+                <p>Return</p>
+            </div></div>
+<!--   <div id="rslt"><div><button id="return-button" onclick="window.location.href='index.html';">RETURN</button></div></div>
+  <div><div><button  onclick="window.location.href ='index.html';">RETURN</button></div></div> -->
 </body>
 </html>
