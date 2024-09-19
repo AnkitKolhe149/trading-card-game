@@ -2,8 +2,11 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  color: #16f00a;
+  line-height: 1;
+  font-size: 20px;
   background-color: #344338;
-  background-image: url("./background.jpg");
+  background-image: url("background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11,113 +14,149 @@ body {
 }
 
 header {
-  background-image: url("./header.png");
+  background-image: url("header.png");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: #241010;
+  background-position:   center center ;
+  background-size:   cover ;
   color: #00ff66;
   text-align: center;
-  padding: 1rem;
-  width: 100%;
-  box-shadow: 0 4px 12 px rgba(233,6,6,0.2);
-  margin-bottom: 0px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
   margin: 0;
-  font-size: 3em;
+  font-size: 2em;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+  color: chartreuse;
+  margin-bottom: 1em;
 }
 
 main {
   display: flex;
   justify-content: space-around;
-  padding: 4rem;
+  padding: 2rem;
+}
+
+.player-section {
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgb(47, 0, 255);
 }
 
 .card-container {
+  padding:3em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  /* background-color: #ADD8E6; */
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   margin: 0 10px;
+  align-items: center;
 }
 
-#player1-cards, #player2-cards {
-  display: flex;
-  gap: 3 em;
-  justify-content: center;
-  margin-bottom: 20px;
+.card-container:hover{
+  transition: transform 0.2s ease, box-shadow 0.15s ease;
+  transform: scale(1);
+  box-shadow: 0 10px 40px rgb(205, 164, 1);
 }
 
 .card {
-  height: auto;
-  width:auto;
-  /* background-color: #4CAF50; */
-
-  background-image: url("./bg\(Strong\).png");
+  width: 6.1em;
+  height: 8.5em;
+  background-image: url("bg\(Strong\).png");
   background-repeat: no-repeat;
-  color: rgb(6,6,6);
-  font-size: 50px;
-  font-weight: 900;
-  padding: 15px;
+  background-size:  cover ;
   border-radius: 10px;
   text-align: center;
+  padding: 1rem;
   cursor: pointer;
-  transition: transform 0.2s ease,box-shadow 0.15s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1)
+  transition: transform 0.2s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 6px rgb(248, 4, 4);
 }
 
 .card:hover {
   transform: scale(1.2);
-  background-color: #7aac1d;
+  box-shadow: 0 6px 12px rgb(7, 209, 244);
 }
 
 .card-image {
-  width: 125px;
-  height: 150px;
+  width: 100px;
+  height: 120px;
   object-fit: cover;
-  position: relative;
-  top: 10px;
   margin-bottom: 10px;
-  border-radius: 8px;
 }
 
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-#selected-player1-card, #selected-player2-card {
-  background-color: #0fe14e;
+.selected-card {
+  height: 300px; 
+  width: 400px;
+  margin: 0 auto; 
+  background-image: url("battle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  opacity: 1;
   padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.749);
+  box-shadow: 0 4px 8px rgba(5, 236, 36, 0.956);
   border-radius: 8px;
-  width: 200px;
-  text-align: center;
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; 
 }
 
 .card-image-selected {
-  width: 100px;
-  height: 150px;
+  width: 5em;
+  height: 12em;
+  border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 15px;
 }
 
-#battle-result-container {
-  background-color: #cc6e37;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+.action-container {
   text-align: center;
-  margin-top: 20px;
+  margin: 4rem;
 }
 
-#fight-button, #fight-div, #return-button{
-  text-align:center;
-  padding:7px;
+/* Additional text style adjustments */
+.selected-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.selected-card p {
+  margin: 5px 0;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.fight-btn {
+  padding: 1.5em 6em;
+  font-size: 1.2rem;
+  background-image: url("battle.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #16f00a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.fight-btn:hover {
+  background-color: #00d0ff;
+  transition: transform 0.2s ease, box-shadow 0.15s ease;
+  transform: scale(1.1);
+  box-shadow: 0 10px 40px rgb(0, 0, 0);
+  
 }
