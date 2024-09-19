@@ -5,77 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Battle Result</title>
   <style>
+    /* General page styles */
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-image: url('./background.jpg');
+      background-size: cover;
+      background-attachment: fixed;
     }
+
+    h1 {
+      font-size: 3em;
+      color: #00ff66;
+      margin-bottom: 20px;
+    }
+
+    .result-container {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+    }
+
     .winner-image {
       width: 300px;
       height: auto;
+      margin-top: 20px;
       animation: bounce 2s infinite;
     }
-    @keyframes bounce {
+
+     @keyframes bounce {
       0%, 100% {
         transform: translateY(0);
       }
       50% {
         transform: translateY(-20px);
       }
-    }
+    } 
+
     .result-message {
       font-size: 24px;
       margin-top: 20px;
+      color: #ffcc00;
     }
 
-    #return-button{
-      text-align:center;
-      padding:7px;
+    #return-button {
+      padding: 10px 20px;
+      background-color: #00ff66;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
     }
 
-    #rslt{
-      text-align:center;
+    #return-button:hover {
+      background-color: #1ac784;
+    }
+
+    /* Splash screen styling */
+    #splash {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 1;
+      transition: opacity 1.5s ease;
+    }
+
+    #splash img {
+      width: 400px;
+    }
+
+    #splash.fade {
+      opacity: 0;
+      pointer-events: none;
     }
   </style>
 </head>
 <body>
-    <div id='splash'>
-        <img alt='' class='logo' src="./blue-lightning-dark.gif"/>
-        <!---src='https://blogger.googleusercontent.com/img/a/AVvXsEg0W7LVFOC9l0DpkhTfYY24SGKgESOElXeJ5s-k7lPYwLUUptIvzsHH6I4dwHAtfyVeKU0xUqALq9bg1yHhzZ_O37SiyeXhSW3JGJ3QEnxV4nlho-Io9mLgpbaVOVV_4gZDQXuqTU_6KYMD9tY9AcgMkeqbdMgx1uwcfjZfEJHXVq29Xyzqi3mw83ZgUg=s299'--->
-        </div>
-        <style>
-        #splash {
-            position:absolute;
-            top: 0;
-            left: 0;
-            background:#000000 !important;
-            height: 100vh;
-            width: 100%;
-            z-index: 9999;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            opacity: 1;
-            transition: opacity 1.5s;
-        }
-        
-        #splash img {
-            width: 400px;
-        }
-        
-        #splash.fade {
-            opacity: 0;
-        }
-        </style>
-        <script>
-        setTimeout(() => {
-        document.getElementById('splash').classList.toggle('fade'); }, 2000);
-        //]]></script>
-  <h1>Battle Result</h1>
-  <div id="result-content"></div>
-  
+  <!-- Splash Screen -->
+  <div id='splash'>
+    <img alt='Splash Logo' class='logo' src="./blue-lightning-dark.gif">
+  </div>
+
+  <!-- Result Content -->
+  <div class="result-container">
+    <h1>Battle Result</h1>
+    <div id="result-content"></div>
+    <button id="return-button" onclick="window.location.href='index.html';">RETURN</button>
+  </div>
+
   <script>
+    // Splash screen fade out after 2 seconds
+    setTimeout(() => {
+      document.getElementById('splash').classList.add('fade');
+    }, 2000);
+
     // Get stored result and winner details from localStorage
     const battleResult = localStorage.getItem('battleResult');
     const winnerName = localStorage.getItem('winnerName');
@@ -92,17 +137,7 @@
       `;
     } else {
       resultContent.innerHTML = `<p class="result-message">${battleResult}</p>`;
-
-    function redirectTo(url) {
-            window.location.href = url;
-        }
     }
   </script>
-  <div>
-  <div onclick="redirectTo('./index.html')">
-                <p>Return</p>
-            </div></div>
-<!--   <div id="rslt"><div><button id="return-button" onclick="window.location.href='index.html';">RETURN</button></div></div>
-  <div><div><button  onclick="window.location.href ='index.html';">RETURN</button></div></div> -->
 </body>
 </html>
