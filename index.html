@@ -1,42 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trading Card Game Battle</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Battle of Ages</title>
+    <link rel="stylesheet" href="Titlestyle.css">
 </head>
 <body>
-  <header>
-    <h1>Trading Card Game Battle</h1>
-  </header>
 
-  <main>
-    <!-- Player 1 Section -->
-    <section id="player1-section" class="player-section">
-      <h2>Player 1's Hand</h2>
-      <div id="player1-cards" class="card-container"></div>
-      <div id="selected-player1-card">
-        <h2>Selected Card</h2>
-        <div id="selected-player1-card-details"></div>
-      </div>
-    </section>
+    <div id="top-menu">
+        <a href="contact.html">Contact Us</a>  
+        <a href="#info">Info</a>
+        <a href="#help">Help</a>
+    </div>
 
-    <!-- Player 2 Section -->
-    <section id="player2-section" class="player-section">
-      <h2>Player 2's Hand</h2>
-      <div id="player2-cards" class="card-container"></div>
-      <div id="selected-player2-card">
-        <h2>Selected Card</h2>
-        <div id="selected-player2-card-details"></div>
-      </div>
-    </section>
-  </main>
+    <div id="game-section">
+        <h1>Battle of Ages</h1>
+        <button id="start-button">Start Game</button>
+    </div>
 
-  <div class="action-container">
-    <button id="fight-button" class="fight-btn" onclick="startBattle()">FIGHT!</button>
-  </div>
+    <canvas></canvas>
 
-  <script src="script.js"></script>
+    <script src="Titlescript.js"></script>
 </body>
 </html>
