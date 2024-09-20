@@ -1,10 +1,15 @@
 // Card data for both players
 const player1Cards = [
   { name: 'Warrior', attack: 8, defense: 5, image: 'warrior.gif' },
-  { name: 'Mage', attack: 6, defense: 7, image: 'mage3-unscreen.gif' },
+  { name: 'Mage', attack: 7, defense: 5, image: 'mage3-unscreen.gif' },
   { name: 'Archer', attack: 7, defense: 6, image: 'archer3-unscreen.gif' },
   { name: 'Dragon', attack: 10, defense: 8, image: 'dragon.gif' },
   { name: 'Goblin', attack: 5, defense: 4, image: 'goblin.gif' },
+  { name: 'Dwarf', attack: 6, defense: 7, image: 'dwarf.gif' },
+  { name: 'Street-fighter', attack: 7, defense: 4, image: 'street-fighter.gif' },
+  { name: 'Werewolf', attack: 8, defense: 6, image: 'werewolf.gif' },
+  { name: 'Rogue', attack: 7, defense: 6, image: 'rogue.gif' },
+  { name: 'Spearman', attack: 9, defense: 4, image: 'Spearman.gif' },
 ];
 
 const player2Cards = [
@@ -13,6 +18,11 @@ const player2Cards = [
   { name: 'Assassin', attack: 9, defense: 5, image: 'assasin2-unscreen.gif' },
   { name: 'Zombie', attack: 10, defense: 9, image: 'zombie2.gif' },
   { name: 'Orc', attack: 6, defense: 5, image: 'orc.gif' },
+  { name: 'Necromancer', attack: 6, defense: 7, image: 'Necromancer.gif' },
+  { name: 'Shape-Shifter', attack: 5, defense: 6, image: 'shape-shifter-unscreen.gif' },
+  { name: 'Vampire', attack: 8, defense: 6, image: 'vampire.gif' },
+  { name: 'Yogi', attack: 6, defense: 8, image: 'yogi.gif' },
+  { name: 'Barbarian', attack: 8, defense: 5, image: 'barbarian.gif' },
 ];
 
 let selectedPlayer1Card = null;
