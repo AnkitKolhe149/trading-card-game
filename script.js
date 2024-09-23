@@ -111,9 +111,16 @@ function startBattle() {
 
 
   // Store result and winner's image in localStorage
-  localStorage.setItem('battleResult', resultMessage);
+  /* localStorage.setItem('battleResult', resultMessage);
   localStorage.setItem('winnerCardImage', winnerCardImage);
+ */
 
+  const result = localStorage.getItem('battleResult');
+  const winnerImage = localStorage.getItem('winnerCardImage');
+
+  document.getElementById('battle-result').innerText = result;
+  document.getElementById('winner-image').src = winnerImage;
+  
   // Navigate to result page
   window.location.href = './final-result.html';
 }
