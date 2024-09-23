@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-yogi.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Sarin Skyward, The Tranquil Sage</h1>
+            <p class="character-description">
+                “In the stillness of the mountains, he unravels the mysteries of the mind and spirit, a beacon of peace in a chaotic world.”
+
+                Sarin Skyward, known as The Tranquil Sage, is a yogi of profound wisdom and inner strength, revered across Eldrath for his mastery of the body, mind, and spirit. Draped in simple robes that symbolize humility, he is often found in serene meditation amidst the peaks, drawing energy from the earth and the cosmos. With each breath, Sarin channels the ancient energies of the world, guiding others on their paths to enlightenment.
+                
+                His teachings emphasize balance and harmony, blending physical prowess with spiritual insight. As a skilled practitioner of martial arts, he embodies the perfect union of power and tranquility, able to defend against any foe while remaining centered in his beliefs. Sarin’s presence inspires those around him to seek deeper understanding, fostering a community that values peace over conflict.
+                
+                In the realm of Eldrath, The Tranquil Sage serves as a guardian of ancient knowledge and a healer of wounds—both physical and emotional. With a calm demeanor and a heart full of compassion, Sarin Skyward stands as a guiding light for those lost in turmoil, embodying the belief that true strength lies in the serenity of the spirit.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/yogi.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

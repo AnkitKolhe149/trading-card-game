@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-shape-shifter.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Calia Moonshadow, The Shifting Mirage</h1>
+            <p class="character-description">
+                “A flicker of movement, a flash of fur—she is everywhere and nowhere, a master of disguise and illusion.”
+
+                Calia Moonshadow, known as The Shifting Mirage, is a shape-shifter of extraordinary skill, able to assume the forms of beasts and beings at will. Her fluid transformations allow her to blend seamlessly into any environment, whether as a majestic wolf, a sly fox, or a shadowy figure in human guise. Clad in robes that shimmer like the night sky, Calia embodies the wild spirit of Eldrath, drawing on the primal magic that courses through the land.
+                
+                With a playful demeanor and a sharp intellect, she uses her abilities to navigate the delicate balance between nature and civilization, often acting as a protector of the wilds. Her talents are invaluable in gathering intelligence, infiltrating enemy lines, and evading capture. Driven by a deep connection to the earth and its creatures, Calia Moonshadow is both a guardian and a trickster, forever weaving between worlds and challenging the boundaries of identity in Eldrath.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/shape-shifter-unscreen.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

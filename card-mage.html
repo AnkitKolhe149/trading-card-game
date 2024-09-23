@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-mage.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Zarathul, The Arcane Wanderer</h1>
+            <p class="character-description">
+                Zarathul is an ancient mage who has wandered across countless realms. With mastery over the arcane arts, he channels powerful elemental forces to strike down his enemies. He is known for his cunning and wisdom, but beneath his calm demeanor lies an untamed storm of destruction.
+            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/mage.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

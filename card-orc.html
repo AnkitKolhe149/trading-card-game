@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-orc.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Gromak Ironfist, The Warlord of Blood and Steel</h1>
+            <p class="character-description">
+                “From the depths of the Darkwood Plains, he rises like a storm, his roar echoing through the valleys of Eldrath.”
+
+                Gromak Ironfist, feared and revered as The Warlord of Blood and Steel, is an orc of immense strength and unyielding resolve. Towering above his kin, Gromak is a fearsome sight clad in armor forged from the bones of fallen foes and reinforced with iron from ancient battlefields. His massive warhammer, Crimson Fury, crackles with dark energy, ready to unleash devastating blows that shatter shields and crush skulls. With each swing, he embodies the rage of his people, turning the tide of battle with primal ferocity.
+                
+                Driven by a desire for glory and a fierce loyalty to his tribe, Gromak leads his warriors into battle with a charisma that ignites their spirits and inspires unwavering loyalty. His battle cries resonate like thunder, rallying orcs and allies alike to his side as they charge into the fray. Known for his tactical cunning as much as his brute strength, he often surprises enemies with strategic maneuvers that leverage both ferocity and wit.
+                
+                Beneath his fierce exterior lies a complex leader who seeks to unify the fractured clans of Eldrath, dreaming of a future where orcs are respected warriors rather than mere raiders. Gromak’s journey is one of redemption and ambition, as he battles not only external foes but also the prejudices that haunt his people. In the realm of Eldrath, Gromak Ironfist stands as a formidable champion, a symbol of strength and honor among orcs, and a force that cannot be ignored on the path to destiny.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/orc.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

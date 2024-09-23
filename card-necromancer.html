@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-necromancer.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Elysia Moonscribe, The Arcane Enchanter</h1>
+            <p class="character-description">
+                “From the hidden libraries of ancient wisdom, he weaves spells that bend reality and shape destiny.”
+
+                Elysian Moonscribe, known throughout Eldrath as The Arcane Enchanter, is a master of the mystical arts, drawing his power from the celestial bodies that illuminate the night sky. Clad in flowing robes adorned with intricate patterns of silver and blue, he carries the Celestial Grimoire, a legendary tome filled with arcane knowledge and spells that echo the whispers of the cosmos. With a flick of his wrist, he conjures ethereal energies, weaving intricate spells that can heal allies, unleash devastating storms, or unravel the very fabric of time.
+                
+                Elysian's keen intellect and insatiable curiosity drive him to seek out lost artifacts and ancient secrets, often leading him into the heart of danger. His connection to the stars grants him foresight, allowing him to glimpse possible futures and guide his companions through the tumultuous tides of fate. As a guardian of knowledge and a champion of balance, he strives to protect Eldrath from dark sorcery and the forces that would disrupt its harmony.
+                
+                With his midnight hair flowing like shadows and eyes that shimmer with the wisdom of the ages, Elysian is a beacon of hope in a world rife with chaos, embodying the eternal struggle between light and dark, knowledge and ignorance. In the realm of Eldrath, his path intertwines with those of warriors, thieves, and dragons, each encounter shaping the destiny of the land as he seeks to preserve the delicate balance of magic and reality. Whether standing at the forefront of battle or delving into the mysteries of the arcane, Elysian Moonscribe is a force to be reckoned with, a true embodiment of the power and mystery of magic.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/Necromancer.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

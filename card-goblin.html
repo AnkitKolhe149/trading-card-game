@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-goblin.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Skritz Nighteye, The Shadow Sneak</h1>
+            <p class="character-description">
+                “From the darkened alleys and forgotten tunnels, he strikes with cunning and chaos, a master of mischief and mayhem.”
+
+                Skritz Nighteye, the devious goblin known as The Shadow Sneak, is a creature of cunning, greed, and wicked speed. Small, wiry, and perpetually cloaked in the stench of old leather and smoke, Skritz thrives in the shadows where his sharp, beady eyes see what others cannot. Armed with his twin daggers—Whisper and Bite—forged from stolen steel and dipped in venom, he slashes through foes with lightning-fast strikes, disappearing before they even feel the sting. His ragged cloak, lined with pockets full of alchemical tricks, potions, and deadly traps, makes him a master of ambushes and escapes. Skritz lives for chaos, delighting in sowing confusion and striking from the dark. A master thief and ruthless assassin, he is driven by an insatiable hunger for gold, power, and the thrill of the hunt. To underestimate Skritz is to invite doom, for even the smallest shadow can hide the deadliest of threats.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/goblin.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

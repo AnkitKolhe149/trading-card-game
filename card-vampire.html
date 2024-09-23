@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-vampire.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Alaric Nightshade, The Bloodlord of Shadows</h1>
+            <p class="character-description">
+                “With a gaze that mesmerizes and fangs that thirst for power, he walks the line between darkness and desire.”
+
+                Alaric Nightshade, known as The Bloodlord of Shadows, is a vampire of ancient lineage, cloaked in an aura of mystery and seduction. Clad in elegant, dark garments that whisper secrets of the night, he commands respect and fear in equal measure. With a striking presence and piercing gaze, Alaric can captivate his prey, drawing them into his world before revealing his true nature.
+                
+                A master of both charm and combat, he wields the powers of darkness, able to manipulate shadows and control lesser beings to do his bidding. His thirst for blood is matched only by his insatiable hunger for knowledge and power, as he seeks to unlock the secrets of immortality and the arcane. In the realm of Eldrath, Alaric operates from the shadows, navigating the intricate webs of political intrigue among the elite, while also hunting those who threaten his dominion.
+                
+                Beneath his charismatic exterior lies a complex soul tormented by his existence, forever grappling with the darkness that resides within. Alaric Nightshade embodies the allure and danger of the night, a timeless figure whose presence promises both temptation and peril in equal measure.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/vampire.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

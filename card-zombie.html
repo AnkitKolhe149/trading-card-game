@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-zombie.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Gorath the Fallen, The Endless Hunger</h1>
+            <p class="character-description">
+                “Once a warrior of great renown, he now shuffles through the shadows, a husk driven by an insatiable thirst for flesh.”
+
+                Gorath the Fallen, known as The Endless Hunger, is a zombie whose tragic past echoes through the desolate lands of Eldrath. Clad in tattered remnants of his former armor, his decaying form is a haunting reminder of the glory he once knew. With sunken eyes and outstretched hands, he wanders the wastelands, driven by an unquenchable desire for life—yet forever cursed to consume the living.
+                
+                In his relentless pursuit of flesh, Gorath possesses an unsettling resilience, with each blow that should fell him only fueling his insatiable drive. While he has lost his humanity, flickers of his former self may occasionally resurface, stirring memories of valor and sacrifice amidst the chaos of his existence. His moans echo like a lament for what was lost, sending shivers through the hearts of those who encounter him.
+                
+                In the realm of Eldrath, The Endless Hunger embodies the terror of mortality and the consequences of dark sorcery. As he shambles through the shadows, he serves as a grim reminder of the fine line between life and death, forever trapped in a world that fears and reviles him. Gorath the Fallen is a haunting figure of tragedy, a testament to the horrors that linger when the cycle of life is disrupted.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/zombie2.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

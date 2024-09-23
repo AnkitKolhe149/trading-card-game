@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-street-fighter.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Riku Steeljaw, The Iron Fist</h1>
+            <p class="character-description">
+                “In the back alleys and underground rings, he fights with the grit and determination of a warrior forged in fire.”
+
+                Riku Steeljaw, known as The Iron Fist, is a street fighter whose reputation for resilience and raw power resonates throughout the urban sprawl of Eldrath. Clad in practical attire, his fists wrapped in leather and steel, he is ready to deliver punishing blows that can shatter bone and spirit. With a background forged in the harsh realities of life on the streets, Riku has honed his skills in hand-to-hand combat, mastering various fighting styles to become an unstoppable force.
+                
+                His tenacity and unyielding will make him a champion for the downtrodden, often stepping into the ring to defend those who cannot protect themselves. Known for his fierce spirit and unwavering code of honor, Riku fights not just for glory but to bring justice to the shadows of Eldrath. With every match, he earns respect and loyalty from his allies, while his enemies tremble at the thought of facing the Iron Fist. Whether in the arena or the streets, Riku Steeljaw embodies the heart and soul of a true warrior, standing ready to fight for what he believes in.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/street-fighter.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

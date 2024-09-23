@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-spearman.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Dorin Windwalker, The Swift Pike</h1>
+            <p class="character-description">
+                “With a spear in hand and the wind at his back, he strikes with the precision of a striking falcon.”
+
+                Dorin Windwalker, known as The Swift Pike, is a master spearman whose agility and finesse make him a formidable force on the battlefield. Clad in light armor that allows for maximum mobility, he wields a finely crafted spear, Skypiercer, which he throws with deadly accuracy or uses to engage foes in close combat. His movements are fluid and graceful, resembling a dancer as he weaves through opponents, striking before they even realize he’s there.
+                
+                Trained in the ancient arts of polearm combat, Dorin excels at both offense and defense, able to hold the line against charging enemies or strike from a distance with lethal precision. His keen instincts and tactical mind enable him to read the flow of battle, making split-second decisions that often turn the tide in his favor. A wanderer at heart, Dorin travels Eldrath, seeking to refine his skills and test himself against the greatest warriors. With a spirit as free as the wind, he embodies the harmony of strength and grace, forever ready to defend those in need with his swift, unerring strikes.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/Spearman.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

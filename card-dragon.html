@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-dragon.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Vaelgor the Everburning,The Inferno Wyrm</h1>
+            <p class="character-description">
+                “From the depths of molten caverns, a winged cataclysm rises, bringing flame and fury upon the world.”
+
+                Vaelgor the Everburning, known as The Inferno Wyrm, is a colossal dragon wreathed in eternal flames that burn hotter than the sun. His scales, blackened as obsidian and seared with glowing veins of magma, shimmer like a living volcano, radiating a heat that scorches the very air around him. His eyes burn with the intensity of twin suns, seething with ancient malice and a hunger for destruction. From his maw spews a torrent of fire capable of reducing fortresses to ash and turning battlefields into blazing infernos. With wings that blot out the sky and a roar that shakes the heavens, Vaelgor commands the skies as an apex predator, feared by kings and gods alike. Legends say his breath can melt steel and his mere presence is a harbinger of doom. To face him is to stand against the wrath of the earth itself—unyielding, unending, and unquenchable.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="./gifs/dragon.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-knight.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Sir Alaric Steelheart,The Lion of the Crimson Banner</h1>
+            <p class="character-description">
+                “With honor as his shield and valor as his sword, he charges into battle like a blazing sun, unyielding and unafraid.”
+
+                Sir Alaric Steelheart, heralded as The Lion of the Crimson Banner, is the paragon of knighthood—a warrior whose courage and sense of duty are as unbreakable as the mythic armor he wears. Clad in gleaming plate mail etched with symbols of protection and adorned with the red crest of his order, Sir Alaric stands as the shield of the righteous and the sword of justice. His blade, Valiant Edge, is a legendary sword forged in celestial fire, its edge honed to pierce through darkness and evil. With every strike, it sings with the light of a thousand battles won in the name of honor. Mounted on his majestic warhorse, he charges forth with unwavering resolve, his presence alone rallying the hearts of his allies and striking terror into the souls of his enemies. Bound by a sacred oath, he fights not for glory but for the noble cause of his kingdom, defending the helpless and vanquishing the wicked. To face Sir Alaric is to meet the unwavering might of the lion—ferocious, fearless, and forever faithful.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/knight.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

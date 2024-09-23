@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-rogue.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Lyra Shadowstep, The Whispering Blade</h1>
+            <p class="character-description">
+                “In the moonlit streets and shadowy corners, she glides like a wisp of smoke, unseen until it’s too late.”
+
+                Lyra Shadowstep, known as The Whispering Blade, is a cunning rogue whose agility and stealth are legendary throughout Eldrath. Clad in dark leather armor that blends seamlessly with the night, she wields twin daggers—Silent Death and Ebon Fang—each perfectly balanced for quick, lethal strikes. A master of deception and trickery, Lyra moves through the shadows, her presence often felt only by the cold chill of fear she leaves behind.
+                
+                Her skills in infiltration and stealth make her invaluable in the realm’s intricate political games, where she navigates alliances and betrayals with ease. With a quick wit and a silver tongue, she can charm her way into high society or slip unnoticed into the darkest underbelly of the city. Driven by a thirst for freedom and a desire to dismantle corrupt powers, Lyra Shadowstep is both a hero and a villain in the eyes of Eldrath, forever dancing on the edge of light and shadow.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/rogue.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

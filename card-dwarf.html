@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-dwarf.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Thrain Ironhammer , The Stoneborn Defender</h1>
+            <p class="character-description">
+                “From the heart of the mountain, where stone meets steel, rises a warrior as unbreakable as the earth itself.”
+
+                Thrain Ironhammer, known across the realms as The Stoneborn Defender, is a dwarf of legendary grit and unyielding resolve. Clad in gleaming armor crafted from adamantine and adorned with the ancient runes of his forebears, he stands as a bastion against all who would dare threaten his kin. His warhammer, the fabled Earthshaker, is an unmovable force forged from the heart of a meteor and enchanted with the power of the mountain’s core. With each mighty swing, Thrain unleashes the fury of the deep, shattering shields, crushing foes, and sending tremors through the ground that topple even the mightiest of giants. His beard, braided with rings of gold and silver, tells tales of battles fought and won, each strand a symbol of his indomitable spirit. To his allies, he is a stalwart protector; to his enemies, he is an unstoppable force of stone and steel, unwavering in his duty and unbreakable in his will.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/dwarf.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>

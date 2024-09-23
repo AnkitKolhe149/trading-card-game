@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Lore Page</title>
+    <link rel="stylesheet" href="card-werewolf.css">
+</head>
+<body>
+    <div class="lore-page-container">
+        <!-- Left section: Character description and stats -->
+        <div class="character-info">
+            <h1 class="character-name">Fenris Bloodhowl, The Moonlit Beast</h1>
+            <p class="character-description">
+                “Under the full moon's gaze, he transforms into a force of primal fury, a creature of legend and terror.”
+
+                Fenris Bloodhowl, known as The Moonlit Beast, is a werewolf of formidable strength and wild spirit, straddling the line between humanity and beast. Clad in rugged leathers that bear the marks of his dual existence, he harnesses the power of the moon to transform into a ferocious wolfman, his senses heightened and instincts sharpened. With razor-sharp claws and fangs, Fenris is a master of the hunt, prowling the forests of Eldrath with an eerie grace.
+                
+                Driven by the call of the wild and the blood of ancient spirits, Fenris battles inner demons as he seeks to control the beast within. His loyalty to his pack is unwavering, and he fights fiercely to protect his kin from both human hunters and supernatural threats. While he embodies the ferocity of a predator, there lies a flicker of humanity in his heart—a desire for acceptance and understanding in a world that fears his true nature.
+                
+                In the realm of Eldrath, Fenris Bloodhowl is both feared and respected, a protector of the wild and a guardian of the secrets hidden in the night. With every full moon, he embraces the beast within, ready to unleash the storm of fury that lies dormant, standing against the encroaching darkness that threatens his home.            </p>
+
+            <!-- Character stats -->
+            <div class="stats">
+                <h2>Character Stats</h2>
+                <ul class="stats-list">
+                    <li>Power: 85</li>
+                    <li>Attack: 90</li>
+                    <li>Defense: 75</li>
+                    <li>HP: 100</li>
+                    <li>Speed: 60</li>
+                    <li>Agility: 65</li>
+                    <li>Toughness: 80</li>
+                    <li>Arcana: 95</li>
+                    <li>Mana: 120</li>
+                    <li>Charisma: 70</li>
+                    <li>Recovery: 50</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right section: Character image -->
+        <div class="character-image">
+            <img src="../gifs/werewolf.gif" alt="Zarathul" id="character-img">
+        </div>
+    </div>
+
+    <!-- Add button for animation effect (optional) -->
+    <button id="animate-button">Animate Character</button>
+
+    <script >
+        const button = document.getElementById('animate-button');
+        const characterImage = document.getElementById('character-img');
+
+        button.addEventListener('click', function() {
+        // Add spinning animation on button click
+     characterImage.classList.toggle('spin');
+        });
+    </script>
+</body>
+</html>
