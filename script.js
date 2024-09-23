@@ -143,3 +143,10 @@ function resolveBattle() {
     localStorage.removeItem('winnerName');
     localStorage.removeItem('winnerImage');
   }
+
+  // Redirect to the result page
+  window.location.href = 'final-result.html';
+}
+
+renderCards(1,player1Cards, 'player1-cards');
+renderCards(2,player2Cards, 'player2-cards');
