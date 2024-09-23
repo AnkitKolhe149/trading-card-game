@@ -94,17 +94,25 @@ function startBattle() {
   const player1Attack = selectedPlayer1Card.attack - selectedPlayer2Card.defense;
   const player2Attack = selectedPlayer2Card.attack - selectedPlayer1Card.defense;
 
+
   let resultMessage = '';
+  let winnerCardImage = '';
+  
   if (player1Attack > player2Attack) {
     resultMessage = `Player 1's ${selectedPlayer1Card.name} wins!`;
+    winnerCardImage = selectedPlayer1Card.image; // Store the winning card's image
   } else if (player2Attack > player1Attack) {
     resultMessage = `Player 2's ${selectedPlayer2Card.name} wins!`;
+    winnerCardImage = selectedPlayer2Card.image; // Store the winning card's image
   } else {
     resultMessage = "It's a tie!";
+    winnerCardImage = './selected.png'; // Set to a generic tie image
   }
 
-  // Store result in localStorage
+
+  // Store result and winner's image in localStorage
   localStorage.setItem('battleResult', resultMessage);
+  localStorage.setItem('winnerCardImage', winnerCardImage);
 
   // Navigate to result page
   window.location.href = './final-result.html';
