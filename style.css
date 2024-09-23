@@ -92,18 +92,18 @@ main {
   width: 100px;
   height: 120px;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .selected-card {
   height: 300px; 
   width: 400px;
   margin: 0 auto; 
-  background-image: url("./battle.png");
+  /* background-image: url("./battle.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
-  opacity: 1;
+  opacity: 1; */
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(5, 236, 36, 0.956);
   border-radius: 8px;
@@ -115,11 +115,37 @@ main {
 }
 
 .card-image-selected {
-  width: 5em;
-  height: 12em;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
+   width: 12em;
+    height: 12em;
+    object-fit: fill;
+    margin-bottom: 15px;
+    margin-left: 5%;
+}
+
+#selected-player1-card-details{
+    background-image: radial-gradient( closest-side,#1570b5, #010101);
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    display: grid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 30%;
+}
+
+#selected-player2-card-details {
+    background-image: radial-gradient( closest-side,#1570b5, #010101);
+    padding: 20px;
+    border: 3px solid #9d9191;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    display:grid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 30%;
 }
 
 .action-container {
@@ -128,7 +154,7 @@ main {
 }
 
 /* Additional text style adjustments */
-.selected-card h3 {
+/* .selected-card h3 {
   margin-bottom: 10px;
   font-size: 1.5em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -159,4 +185,4 @@ main {
   transform: scale(1.1);
   box-shadow: 0 10px 40px rgb(0, 0, 0);
   
-}
+} */
