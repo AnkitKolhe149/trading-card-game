@@ -1,0 +1,200 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f0400a;
+    line-height: 1;
+    font-size: 20px;
+    background-color: #344338;
+    background-image: url("images/vs_crest.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-attachment: fixed;
+    
+}
+
+/* Header Styles */
+header {
+    background-image: radial-gradient(closest-side ,#3b9b4be3, #010000);
+    background-repeat: no-repeat;
+    background-position:   center center ;
+    background-size:   cover ;
+    color: #f2ff00ee;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+  font-size: 2em;;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Game Container */
+/* .game-container {
+    padding: 2em;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgb(0, 183, 255);
+} */
+
+/* Card Container */
+.card-container {
+    padding:2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 0 10px;
+    align-items: center;
+}
+
+/* Card Styles */
+.card-container:hover{
+    transition: transform 0.2s ease, box-shadow 0.15s ease;
+    transform: scale(1);
+    box-shadow: 0 10px 40px rgb(205, 137, 1);
+  }
+  
+  .card {
+    width: 8em;
+    height: 10.5em;  
+    background-image: radial-gradient( closest-side ,#3b869b, #010000);
+    background-repeat: no-repeat;
+    background-size:  cover ;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.15s ease;
+    box-shadow: 0 2px 6px rgb(248, 4, 4);
+  }
+  
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgb(7, 209, 244);
+}
+
+.card-image {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    background-image: radial-gradient( closest-side ,#f7000082, #05586f);;
+    border-radius: 30px;
+    height:24px;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 5px solid rgb(50, 50, 50);
+    box-shadow: 0px 1px 6px 0px rgb(235, 254, 129);
+    transform: translate(0, 3px);
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
+
+.card-title:active{
+    cursor: pointer;
+    transform: translate(0, 0);
+    border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+
+/* Selected Card Details */
+.selected-cards {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.2%;
+    margin-right: 0.2%;
+    margin-top: 4em;
+   /*  background-image: repeating-radial-gradient(ellipse,#00b200e3, #020202); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    opacity: 1;
+    padding: 1em;
+  /*   box-shadow: 0 4px 8px rgba(5, 236, 36, 0.956);*/
+    border-radius: 8px; 
+    justify-content: space-evenly;
+}
+
+#selected-player1-card-details{
+    background-image: repeating-radial-gradient( circle,#02310ae3, #010000);
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    display: grid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#selected-player2-card-details {
+    background-image: repeating-radial-gradient( circle,#02310ae3, #010000);
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    display:grid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.selected-card h2 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.card-image-selected {
+    width: 12em;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain;
+   
+}
+
+/* Battle Result Styles */
+.battle-result {
+    margin-top: 30px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #d9534f;
+    text-align: center;
+    padding: 10px;
+    background-image: repeating-radial-gradient( circle,#080808e3, #6a0707);
+    border: 2px solid #d9534f;
+    
+    box-shadow: 0 0px 30px rgb(255, 0, 0);
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    background: #4b79a1;
+    color: white;
+}
