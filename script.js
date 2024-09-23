@@ -94,7 +94,6 @@ function startBattle() {
   const player1Attack = selectedPlayer1Card.attack - selectedPlayer2Card.defense;
   const player2Attack = selectedPlayer2Card.attack - selectedPlayer1Card.defense;
 
-
   let resultMessage = '';
   let winnerCardImage = '';
   
@@ -106,24 +105,18 @@ function startBattle() {
     winnerCardImage = selectedPlayer2Card.image; // Store the winning card's image
   } else {
     resultMessage = "It's a tie!";
-    winnerCardImage = './selected.png'; // Set to a generic tie image
+    winnerCardImage = 'selected.png'; // Set to a generic tie image
   }
 
-
-  // Store result and winner's image in localStorage
-  /* localStorage.setItem('battleResult', resultMessage);
-  localStorage.setItem('winnerCardImage', winnerCardImage);
- */
-
-  const result = localStorage.getItem('battleResult');
-  const winnerImage = localStorage.getItem('winnerCardImage');
-
-  document.getElementById('battle-result').innerText = result;
-  document.getElementById('winner-image').src = winnerImage;
   
+  // Store result and winner's image in localStorage
+  localStorage.setItem('battleResult', resultMessage);
+  localStorage.setItem('winnerCardImage', winnerCardImage);
+
   // Navigate to result page
-  window.location.href = './final-result.html';
+  window.location.href = 'final-result.html';
 }
+
 
 // Render cards for both players on page load
 renderCards(1, player1Cards, 'player1-cards');
