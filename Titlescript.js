@@ -99,3 +99,9 @@ function animate() {
 
 animate();
 init();
+
+// Show the game buttons when Start Game is clicked
+function showGameButtons() {
+    document.getElementById("game-buttons").style.display = "block";
+    document.getElementById("start-button").style.display = "none"; // Hide start button
+}
