@@ -20,42 +20,29 @@ body {
     background-position: center center;
     background-size: contain;
     background-attachment: fixed;
-    
 }
 
 /* Header Styles */
 header {
-    background-image: radial-gradient(closest-side ,#3b9b4be3, #010000);
-    background-repeat: no-repeat;
-    background-position:   center center ;
-    background-size:   cover ;
+    background-image: radial-gradient(closest-side, #3b9b4be3, #010000);
     color: #f2ff00ee;
     text-align: center;
-    padding: 1.5rem;
+    padding: 2rem; /* Increased padding for better spacing */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     margin: 0;
-  font-size: 2em;;
+    font-size: 2.5em; /* Adjusted font size for header */
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Increased font size for clarity */
 }
 
 /* Game Container */
-/* .game-container {
-    padding: 2em;
-    border-radius: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgb(0, 183, 255);
-} */
-
-/* Card Container */
 .card-container {
-    padding:2em;
+    padding: 2em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -67,30 +54,58 @@ p {
 }
 
 /* Card Styles */
-.card-container:hover{
-    transition: transform 0.2s ease, box-shadow 0.15s ease;
-    transform: scale(1);
-    box-shadow: 0 10px 40px rgb(205, 137, 1);
-  }
-  
-  .card {
+.card {
     width: 8em;
-    height: 10.5em;  
-    background-image: radial-gradient( closest-side ,#3b869b, #010000);
-    background-repeat: no-repeat;
-    background-size:  cover ;
+    height: 10.5em;
+    background: no-repeat center;
+    background-size: contain;
     border-radius: 10px;
     text-align: center;
-    padding: 1rem;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.15s ease;
-    box-shadow: 0 2px 6px rgb(248, 4, 4);
-  }
-  
+    perspective: 1000px; /* For 3D rotation */
+}
 
-.card:hover {
-    transform: scale(1.2);
-    box-shadow: 0 6px 12px rgb(7, 209, 244);
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+/* Front Side of the Card */
+.card-front {
+    background: url('mage.png') no-repeat center;
+    background-size: contain;
+    box-shadow: 0 2px 6px rgb(248, 4, 4);
+}
+
+/* Back Side of the Card */
+.card-back {
+    background-image: radial-gradient(closest-side, #3b869b, #010000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 6px rgb(248, 4, 4);
+    transform: rotateY(180deg);
 }
 
 .card-image {
@@ -101,26 +116,16 @@ p {
 }
 
 .card-title {
-    background-image: radial-gradient( closest-side ,#f7000082, #05586f);;
+    background-image: radial-gradient(closest-side, #f7000082, #05586f);
     border-radius: 30px;
-    height:24px;
+    height: 24px;
     width: 100%;
     margin-top: 15px;
     text-align: center;
     font-weight: 600;
     border-bottom: 5px solid rgb(50, 50, 50);
     box-shadow: 0px 1px 6px 0px rgb(235, 254, 129);
-    transform: translate(0, 3px);
-    transition: 0.2s;
-    transition-timing-function: linear;
 }
-
-.card-title:active{
-    cursor: pointer;
-    transform: translate(0, 0);
-    border-bottom: 2px solid rgb(50, 50, 50);
-}
-
 
 /* Selected Card Details */
 .selected-cards {
@@ -129,36 +134,23 @@ p {
     margin-left: 0.2%;
     margin-right: 0.2%;
     margin-top: 4em;
-   /*  background-image: repeating-radial-gradient(ellipse,#00b200e3, #020202); */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
-    opacity: 1;
+    background-size: cover;
     padding: 1em;
-  /*   box-shadow: 0 4px 8px rgba(5, 236, 36, 0.956);*/
-    border-radius: 8px; 
+    border-radius: 8px;
     justify-content: space-evenly;
 }
 
-#selected-player1-card-details{
-    background-image: repeating-radial-gradient( circle,#02310ae3, #010000);
+#selected-player1-card-details,
+#selected-player2-card-details {
+    background-image: radial-gradient(circle, #02310ae3, #010000);
     padding: 20px;
     border: 2px solid #ccc;
     border-radius: 8px;
     width: 280px;
     text-align: center;
     display: grid;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#selected-player2-card-details {
-    background-image: repeating-radial-gradient( circle,#02310ae3, #010000);
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    width: 280px;
-    text-align: center;
-    display:grid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -172,7 +164,6 @@ p {
     height: auto;
     border-radius: 5px;
     object-fit: contain;
-   
 }
 
 /* Battle Result Styles */
@@ -183,9 +174,8 @@ p {
     color: #d9534f;
     text-align: center;
     padding: 10px;
-    background-image: repeating-radial-gradient( circle,#080808e3, #6a0707);
+    background-image: radial-gradient(circle, #080808e3, #6a0707);
     border: 2px solid #d9534f;
-    
     box-shadow: 0 0px 30px rgb(255, 0, 0);
 }
 
@@ -197,4 +187,10 @@ footer {
     text-align: center;
     background: #4b79a1;
     color: white;
+}
+
+/* New Footer Element Styles */
+footer p {
+    font-size: 1.2rem;
+    color: #fff;
 }
