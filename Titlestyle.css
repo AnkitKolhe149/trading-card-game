@@ -12,6 +12,9 @@ img {
   background-size: cover;
   background-attachment: fixed;
 }
+audio {
+        display: none; 
+}
 .center{
     display: block;
     margin-left: auto;
