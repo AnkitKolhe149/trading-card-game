@@ -97,23 +97,39 @@ audio {
 
 /* Larger button styling (Vs Human, Vs AI) */
 .game-button {
-    margin-top: 20px;
-    padding: 15px 50px;
-    font-size: 1.5rem;
-    color: white;
-    background-color: #333;
-    border: 1px solid #f0a500;
-    border-radius: 5px;  /* Same rounded corners as top-menu */
+    width: 10em;
+    height: 3em;
+    margin: 2em;
+    background-image: radial-gradient( #ff3700, #010000af);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 0.625em;
+    font-size: 30px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
 }
 
-/* Hover effect for the game buttons */
-.game-button:hover {
-    background-color: #f0a500; /* Same hover color as top-menu */
-    color: black;              /* Text color change on hover */
-    transform: translateY(-5px);
-}
+.game-button:after {
+    content: "";
+    background-image: radial-gradient(closest-side, #ff0000, #010000);
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(30deg) scale(0, 1);
+    transition: all 0.7s;
+   }
+
+.game-button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 5s;
+    transition: all 0.9s;
+   }
 
 /* Background canvas */
 canvas {
