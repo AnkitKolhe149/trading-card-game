@@ -9,13 +9,13 @@ body, html {
 audio {
         display: none; 
 }
-.center{
+/* .center{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     width: 50%;
-}
+} */
 /* Top menu styling */
 #top-menu {
     position: absolute;
