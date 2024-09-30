@@ -110,3 +110,58 @@ canvas {
   background-position: center center;
   background-size: cover;
 } */
+
+/* Contact page styling */
+#contact-section {
+    text-align: center;
+    padding: 50px;
+}
+
+#contact-section h1 {
+    font-size: 3rem;
+    color: #f0a500;
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    background-color: #222;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border: 1px solid #f0a500;
+    border-radius: 10px;
+    color: white;
+}
+
+.contact-card h3 {
+    margin: 0 0 10px 0;
+    color: #f0a500;
+}
+
+.contact-card p {
+    margin: 0;
+}
+
+.contact-card a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Back to home link */
+#back-to-home {
+    margin-top: 30px;
+}
+
+#back-to-home a {
+    color: #f0a500;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#back-to-home a:hover {
+    text-decoration: underline;
+}
