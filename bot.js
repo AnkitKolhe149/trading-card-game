@@ -126,6 +126,7 @@ setTimeout(function(){ },2000);
 function aiSelectCard() {
   const randomIndex = Math.floor(Math.random() * aiCards.length);
   selectedAICard = aiCards[randomIndex];
+  setTimeout(function(){console.log("Selecting Opponent") },2000);
   renderSelectedCards();
 }
 
@@ -140,7 +141,9 @@ function determineWinner() {
 
   const playerScore = selectedPlayerCard.attack + selectedPlayerCard.defense;
   const aiScore = selectedAICard.attack + selectedAICard.defense;
-
+  
+setTimeout(function(){ console.log("Calculating Result") },2000);
+  
   if (playerScore > aiScore) {
     resultDiv.textContent = 'Player Wins!';
   } else if (playerScore < aiScore) {
