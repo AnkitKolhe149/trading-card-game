@@ -119,6 +119,8 @@ function renderSelectedCards() {
     `;
   }
 }
+//making wait some time before selection
+setTimeout(function(){ },2000);
 
 // Function to make AI select a card randomly
 function aiSelectCard() {
@@ -126,6 +128,9 @@ function aiSelectCard() {
   selectedAICard = aiCards[randomIndex];
   renderSelectedCards();
 }
+
+// making wait some time before giving winner
+setTimeout(function(){ },2000);
 
 // Function to determine the winner
 function determineWinner() {
