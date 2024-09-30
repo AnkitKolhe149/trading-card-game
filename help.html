@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Help - Ultimate Showdown</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ultimate Showdown - Help & Support</h1>
+            <button class="home-btn">Return to Home</button>
+        </header>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <div class="faq-item">
+                <h3>How do I start a game?</h3>
+                <p>To start a game, both players need to shuffle their decks and draw five cards. Decide who goes first by flipping a coin or rolling a die. Then, follow the rules outlined in the “How to Play” section.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What should I do if my opponent disconnects?</h3>
+                <p>If your opponent disconnects during an online match, the game will automatically pause. If they fail to reconnect within 5 minutes, you may either end the game or wait until they rejoin.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I report a bug?</h3>
+                <p>If you encounter a bug during gameplay, please use the contact form below to report it. Make sure to provide detailed information about the issue and, if possible, include screenshots.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I play the game offline?</h3>
+                <p>Yes! Ultimate Showdown has an offline mode where you can play against AI opponents. However, some features like multiplayer and leaderboard updates require an active internet connection.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I unlock new cards?</h3>
+                <p>New cards can be unlocked by winning matches, completing in-game achievements, or by purchasing expansion packs. Head over to the in-game store to view available packs.</p>
+            </div>
+        </section>
+
+        <section class="troubleshooting">
+            <h2>Troubleshooting</h2>
+            <ul>
+                <li><strong>Game won’t load:</strong> Make sure your internet connection is stable. Try refreshing the page or restarting the app.</li>
+                <li><strong>Game freezes:</strong> Close the game and reopen it. Ensure your device meets the game’s minimum system requirements.</li>
+                <li><strong>Audio not working:</strong> Check your device’s sound settings. Make sure the audio is not muted in-game or on your device.</li>
+                <li><strong>Cannot log in:</strong> Double-check your username and password. If you’ve forgotten your password, use the "Forgot Password" option to reset it.</li>
+            </ul>
+        </section>
+
+        <section class="contact-support">
+            <h2>Contact Support</h2>
+            <p>If you need further assistance, please fill out the form below, and we will get back to you as soon as possible:</p>
+            <form action="submit-form.php" method="POST" class="support-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="issue">Issue:</label>
+                <textarea id="issue" name="issue" rows="5" placeholder="Describe your issue..." required></textarea>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        // Return to Home Button functionality
+        document.querySelector('.home-btn').addEventListener('click', function() {
+            window.location.href = 'index.html';  // Adjust the URL as necessary for your actual home page
+        });
+    </script>
+</body>
+</html>
