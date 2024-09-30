@@ -145,5 +145,8 @@ function determineWinner() {
   }
 }
 
+// Redirect to the result page
+  window.location.href = 'bot-result.html';
+
 // Initialize the game by rendering the player's cards
 renderCards(playerCards, 'player-cards');
